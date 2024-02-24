@@ -1,0 +1,44 @@
+﻿<Window x:Class="galerijaSlika.Forme.FrmKorisnik"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:galerijaSlika.Forme"
+        mc:Ignorable="d"
+                Title="Podaci o korisniku - zaposlenom" Height="217" Width="350" 
+        FontSize="14" Foreground="#4d0000">
+
+
+    <Grid Height="222" VerticalAlignment="Top" >
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="korisnik.png" AlignmentX="Center" AlignmentY="Top"></ImageBrush>
+        </Grid.Background>
+
+        <TextBox Name="txtKorisnikIme" HorizontalAlignment="Center" Height="23" Margin="0,18,0,0" TextWrapping="Wrap" FontStyle="Italic" Foreground="Gray" Text="Ime korisnika" VerticalAlignment="Top" Width="120" />
+        <TextBox Name="txtKorisnikPrezime" HorizontalAlignment="Center" Height="23" Margin="0,46,0,0" TextWrapping="Wrap" FontStyle="Italic" Foreground="Gray" Text="Prezime korisnika" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtJMBGKor" HorizontalAlignment="Center" Height="23" Margin="0,74,0,0" TextWrapping="Wrap" FontStyle="Italic" Foreground="Gray" Text="JMBG" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtAdresaKor" HorizontalAlignment="Center" Height="22" TextWrapping="Wrap" FontStyle="Italic" Foreground="Gray" Text="Adresa" VerticalAlignment="Top" Width="120" Margin="0,102,0,0" />
+        <TextBox Name="txtGradKor" HorizontalAlignment="Center" Height="22" TextWrapping="Wrap" FontStyle="Italic" Foreground="Gray" Text="Grad" VerticalAlignment="Top" Width="120" Margin="0,129,0,0"/>
+        <TextBox Name="txtKontaktKor" HorizontalAlignment="Center" Height="22" TextWrapping="Wrap" FontStyle="Italic" Foreground="Gray" Text="Kontakt" VerticalAlignment="Top" Width="120" Margin="0,156,0,0"/>
+        <Button Name="btnSacuvaj" Content="Sačuvaj" Foreground="#3a1313" FontWeight="Medium" HorizontalAlignment="Left" Margin="16,167,0,0" VerticalAlignment="Top" Width="75" Click="btnSacuvaj_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Name="btnOtkazi" Content="Otkaži" Foreground="#3a1313" FontWeight="Medium" HorizontalAlignment="Left" Margin="257,167,0,0" VerticalAlignment="Top" Width="75" Click="btnOtkazi_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+
+                </Style>
+            </Button.Resources>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Margin="43,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="67" Width="90"><Run Foreground="Black" Text="Korisnik:"/></TextBlock>
+
+
+
+    </Grid>
+</Window>

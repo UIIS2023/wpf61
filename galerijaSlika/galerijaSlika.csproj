@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Forme\delo.png" />
+    <None Remove="Forme\galerija.png" />
+    <None Remove="Forme\izlagac.png" />
+    <None Remove="Forme\izlozba.png" />
+    <None Remove="Forme\korisnik.png" />
+    <None Remove="Forme\posetilac.png" />
+    <None Remove="Forme\prodaja.png" />
+    <None Remove="Forme\sala.png" />
+    <None Remove="Forme\ulaznica.png" />
+    <None Remove="galerija.jpg" />
+    <None Remove="galerija1.jpg" />
+    <None Remove="icons8-add-properties-80.png" />
+    <None Remove="icons8-trash-50.png" />
+    <None Remove="icons8-update-50.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Forme\delo.png" />
+    <Resource Include="Forme\galerija.png" />
+    <Resource Include="Forme\izlagac.png" />
+    <Resource Include="Forme\izlozba.png" />
+    <Resource Include="Forme\korisnik.png" />
+    <Resource Include="Forme\posetilac.png" />
+    <Resource Include="Forme\prodaja.png" />
+    <Resource Include="Forme\sala.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Forme\ulaznica.png" />
+    <Resource Include="galerija.jpg" />
+    <Resource Include="galerija1.jpg" />
+    <Resource Include="icons8-add-properties-80.png" />
+    <Resource Include="icons8-trash-50.png" />
+    <Resource Include="icons8-update-50.png" />
+  </ItemGroup>
+
+</Project>
